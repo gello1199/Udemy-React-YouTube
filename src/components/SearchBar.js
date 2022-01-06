@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = ({ onTermSubmit }) => {
+const SearchBar = ({ onFormSubmit }) => {
     const [term, setTerm] = useState('')
 
     const onInputChange = (event) => {
@@ -10,7 +10,7 @@ const SearchBar = ({ onTermSubmit }) => {
     const onSubmit = (event) => {
         event.preventDefault()
 
-        onTermSubmit(term)
+        onFormSubmit(term)
     }
 
     return (
